@@ -18,7 +18,6 @@ export default function Home() {
     calculateCompoundInterest,
     clearForm,
     formatCurrency,
-    formatValueForInput,
     parseValueInput,
     updateInitialValue,
     updateMonthlyValue,

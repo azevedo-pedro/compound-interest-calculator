@@ -24,12 +24,13 @@ export default async function LocaleLayout({
   params
 }: {
   children: React.ReactNode;
-  params: {locale: string};
+  params: Promise<{locale: string}>;
 }) {
+  const resolvedParams = await params;
   const messages = await getMessages();
 
   return (
-    <html lang={params.locale}>
+    <html lang={resolvedParams.locale}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
