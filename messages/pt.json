@@ -1,0 +1,95 @@
+{
+  "title": "Calculadora de Juros Compostos",
+  "subtitle": "Calcule o crescimento do seu investimento com aportes mensais",
+  "form": {
+    "title": "Dados do Investimento",
+    "initialValue": {
+      "label": "Valor Inicial",
+      "placeholder": "0,00"
+    },
+    "monthlyValue": {
+      "label": "Aporte Mensal",
+      "placeholder": "0,00"
+    },
+    "interestRate": {
+      "label": "Taxa de Juros (% ao ano)",
+      "placeholder": "12,00"
+    },
+    "period": {
+      "label": "Período (meses)",
+      "placeholder": "24",
+      "helper": "Exemplos: 12 (1 ano), 24 (2 anos), 60 (5 anos)"
+    },
+    "calculate": "Calcular",
+    "clear": "Limpar"
+  },
+  "results": {
+    "finalAmount": {
+      "title": "Valor Final",
+      "description": "Seu investimento após {months} meses"
+    },
+    "totalContributed": {
+      "title": "Total Investido", 
+      "description": "Soma de todos os aportes"
+    },
+    "totalInterest": {
+      "title": "Juros Ganhos",
+      "description": "Rendimento do período"
+    },
+    "returnRate": {
+      "title": "Rentabilidade",
+      "description": "Retorno sobre investimento"
+    },
+    "evolution": {
+      "title": "Evolução do Investimento",
+      "period": "Período: {months} meses",
+      "monthlyRate": "Taxa mensal equivalente: {rate}%",
+      "contributions": "Aportes ({percentage}%)",
+      "interest": "Juros ({percentage}%)",
+      "averageMonthly": "Valor Médio Mensal",
+      "averageInterest": "Juros por Mês (Média)",
+      "totalGrowth": "Crescimento Total"
+    }
+  },
+  "explanation": {
+    "title": "Como funciona o cálculo",
+    "compoundInterest": {
+      "title": "Juros Compostos",
+      "description": "Os juros são calculados sobre o valor inicial mais os juros já acumulados, criando um efeito exponencial.",
+      "example": "Exemplo: R$ 1000 a 1% ao mês = R$ 1010 no primeiro mês, R$ 1020,10 no segundo mês."
+    },
+    "monthlyContributions": {
+      "title": "Aportes Mensais",
+      "description": "Cada aporte mensal também rende juros compostos a partir do mês seguinte.",
+      "example": "Quanto mais cedo você aportar, mais tempo o valor terá para crescer."
+    },
+    "annualRate": {
+      "title": "Taxa Anual",
+      "description": "A taxa informada é convertida para mensal (dividida por 12) para o cálculo preciso.",
+      "example": "12% ao ano = 1% ao mês (aproximadamente)."
+    },
+    "timepower": {
+      "title": "Poder do Tempo",
+      "description": "O tempo é o fator mais importante nos juros compostos - quanto mais tempo, maior o crescimento exponencial.",
+      "example": "Einstein disse: \"Juros compostos são a oitava maravilha do mundo\"."
+    }
+  },
+  "errors": {
+    "general": "Informe pelo menos um valor inicial ou aporte mensal",
+    "initialValue": "O valor inicial não pode ser negativo",
+    "monthlyValue": "O aporte mensal não pode ser negativo",
+    "interestRate": {
+      "required": "A taxa de juros deve ser maior que zero",
+      "max": "A taxa de juros não pode ser maior que 100%"
+    },
+    "period": {
+      "required": "Informe um período maior que zero meses",
+      "max": "O período não pode ser maior que 600 meses (50 anos)"
+    }
+  },
+  "locationSelect": {
+    "label": "Selecionar Idioma",
+    "english": "English",
+    "portuguese": "Português"
+  }
+}

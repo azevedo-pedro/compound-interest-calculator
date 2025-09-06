@@ -1,0 +1,95 @@
+{
+  "title": "Compound Interest Calculator",
+  "subtitle": "Calculate your investment growth with monthly contributions",
+  "form": {
+    "title": "Investment Data",
+    "initialValue": {
+      "label": "Initial Value",
+      "placeholder": "0.00"
+    },
+    "monthlyValue": {
+      "label": "Monthly Contribution",
+      "placeholder": "0.00"
+    },
+    "interestRate": {
+      "label": "Interest Rate (% per year)",
+      "placeholder": "12.00"
+    },
+    "period": {
+      "label": "Period (months)",
+      "placeholder": "24",
+      "helper": "Examples: 12 (1 year), 24 (2 years), 60 (5 years)"
+    },
+    "calculate": "Calculate",
+    "clear": "Clear"
+  },
+  "results": {
+    "finalAmount": {
+      "title": "Final Amount",
+      "description": "Your investment after {months} months"
+    },
+    "totalContributed": {
+      "title": "Total Invested", 
+      "description": "Sum of all contributions"
+    },
+    "totalInterest": {
+      "title": "Interest Earned",
+      "description": "Earnings for the period"
+    },
+    "returnRate": {
+      "title": "Return Rate",
+      "description": "Return on investment"
+    },
+    "evolution": {
+      "title": "Investment Evolution",
+      "period": "Period: {months} months",
+      "monthlyRate": "Equivalent monthly rate: {rate}%",
+      "contributions": "Contributions ({percentage}%)",
+      "interest": "Interest ({percentage}%)",
+      "averageMonthly": "Average Monthly Value",
+      "averageInterest": "Interest per Month (Average)",
+      "totalGrowth": "Total Growth"
+    }
+  },
+  "explanation": {
+    "title": "How the calculation works",
+    "compoundInterest": {
+      "title": "Compound Interest",
+      "description": "Interest is calculated on the initial value plus previously accumulated interest, creating an exponential effect.",
+      "example": "Example: $1000 at 1% per month = $1010 in the first month, $1020.10 in the second month."
+    },
+    "monthlyContributions": {
+      "title": "Monthly Contributions",
+      "description": "Each monthly contribution also earns compound interest from the following month.",
+      "example": "The earlier you contribute, the more time the value will have to grow."
+    },
+    "annualRate": {
+      "title": "Annual Rate",
+      "description": "The informed rate is converted to monthly (divided by 12) for precise calculation.",
+      "example": "12% per year = 1% per month (approximately)."
+    },
+    "timepower": {
+      "title": "Power of Time",
+      "description": "Time is the most important factor in compound interest - the longer the time, the greater the exponential growth.",
+      "example": "Einstein said: \"Compound interest is the eighth wonder of the world\"."
+    }
+  },
+  "errors": {
+    "general": "Enter at least an initial value or monthly contribution",
+    "initialValue": "The initial value cannot be negative",
+    "monthlyValue": "The monthly contribution cannot be negative",
+    "interestRate": {
+      "required": "The interest rate must be greater than zero",
+      "max": "The interest rate cannot be greater than 100%"
+    },
+    "period": {
+      "required": "Enter a period greater than zero months",
+      "max": "The period cannot be greater than 600 months (50 years)"
+    }
+  },
+  "locationSelect": {
+    "label": "Select Language",
+    "english": "English",
+    "portuguese": "Português"
+  }
+}
