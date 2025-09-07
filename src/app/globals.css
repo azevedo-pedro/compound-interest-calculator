@@ -1,21 +1,59 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Catppuccin Latte (Light Theme) */
+  --background: #eff1f5;
+  --foreground: #4c4f69;
+  --primary: #1e66f5;
+  --secondary: #7c7f93;
+  --accent: #ea76cb;
+  --muted: #e6e9ef;
+  --border: #acb0be;
+  --input: #dce0e8;
+  --ring: #1e66f5;
+  --chart-1: #d20f39;
+  --chart-2: #fe640b;
+  --chart-3: #df8e1d;
+  --chart-4: #40a02b;
+  --chart-5: #209fb5;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Catppuccin Mocha (Dark Theme) */
+    --background: #1e1e2e;
+    --foreground: #cdd6f4;
+    --primary: #89b4fa;
+    --secondary: #6c7086;
+    --accent: #f5c2e7;
+    --muted: #313244;
+    --border: #45475a;
+    --input: #313244;
+    --ring: #89b4fa;
+    --chart-1: #f38ba8;
+    --chart-2: #fab387;
+    --chart-3: #f9e2af;
+    --chart-4: #a6e3a1;
+    --chart-5: #89dceb;
   }
 }
 
