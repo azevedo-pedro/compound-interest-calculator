@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://cic.azevedo.dev/sitemap.xml
+Sitemap: https://cic.azevedo.dev/en/sitemap.xml
+Sitemap: https://cic.azevedo.dev/pt/sitemap.xml
+
+# Allow search engines to crawl all pages
+Allow: /en
+Allow: /pt
+Allow: /en/
+Allow: /pt/
+
+# Block any potential admin or private areas (future-proofing)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+# Crawl delay (optional - be considerate to search engines)
+Crawl-delay: 1

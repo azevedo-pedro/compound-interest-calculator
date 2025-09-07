@@ -3,6 +3,7 @@
 import { useCompoundInterestCalculator } from '@/hooks/useCompoundInterestCalculator';
 import { useTranslations, useLocale } from 'next-intl';
 import { useRouter } from 'next/navigation';
+import StructuredData from '@/components/StructuredData';
 
 export default function Home() {
   const locale = useLocale();
@@ -30,7 +31,9 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 py-12 px-4 transition-colors duration-300">
+    <>
+      <StructuredData />
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 py-12 px-4 transition-colors duration-300">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-800 dark:text-white mb-2 transition-colors duration-300">
@@ -339,5 +342,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+    </>
   );
 }
